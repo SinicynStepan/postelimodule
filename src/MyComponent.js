@@ -198,40 +198,40 @@ export default function MyComponent() {
                      />
                   </div>
                   ))
-      else {
+      // else {
 
-         for (let index = 0; index < arrImageLenght; index++) {
-            if (arrImages[index].main_color === userMainColor && arrImages[index].add_color === userAddColor) {
-               setFile_path(arrImages[index].file);
-               setIsFound(true);
-            }
-            else 
-               continue;
-         }
-         if (isFound)
-            return   <div className="image-content">
-                        <img 
-                           alt={''}
-                           src={file_path}
-                        />
-                     </div>
-         else
-            return   <div 
-                        className="image-content bgc_warm_sand" 
-                        style={{
-                           display: 'flex', 
-                           alignItems: "center",
-                           justifyContent: 'center',
-                           textAlign: 'center'
-                        }}>
-                        <PiSmileySadDuotone style={{
-                           width: '80px',
-                           height: '80px'
-                        }} />
-                        К сожалению такого сочетания пока нет<br/>
-                        Но мы над этим работаем
-                     </div>
-      }
+      //    for (let index = 0; index < arrImageLenght; index++) {
+      //       if (arrImages[index].main_color === userMainColor && arrImages[index].add_color === userAddColor) {
+      //          setFile_path(arrImages[index].file);
+      //          setIsFound(true);
+      //       }
+      //       else 
+      //          continue;
+      //    }
+      //    if (isFound)
+      //       return   <div className="image-content">
+      //                   <img 
+      //                      alt={''}
+      //                      src={file_path}
+      //                   />
+      //                </div>
+      //    else
+      //       return   <div 
+      //                   className="image-content bgc_warm_sand" 
+      //                   style={{
+      //                      display: 'flex', 
+      //                      alignItems: "center",
+      //                      justifyContent: 'center',
+      //                      textAlign: 'center'
+      //                   }}>
+      //                   <PiSmileySadDuotone style={{
+      //                      width: '80px',
+      //                      height: '80px'
+      //                   }} />
+      //                   К сожалению такого сочетания пока нет<br/>
+      //                   Но мы над этим работаем
+      //                </div>
+      // }
    } 
 
 
