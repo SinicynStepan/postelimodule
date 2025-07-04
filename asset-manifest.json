@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/postelimodule/static/css/main.55eb33c9.css",
+    "main.js": "/postelimodule/static/js/main.69cb182a.js",
+    "static/media/red-pink.png": "/postelimodule/static/media/red-pink.5b097ff1a0cc8c078ec6.png",
+    "static/media/iceberg-yellow_green.png": "/postelimodule/static/media/iceberg-yellow_green.eaa787a26ccc4df9e30b.png",
+    "static/media/resolution_blue-gold.png": "/postelimodule/static/media/resolution_blue-gold.457f306637e1f0379f8c.png",
+    "static/media/green-pink.png": "/postelimodule/static/media/green-pink.d26370fbbeb79812d85b.png",
+    "static/media/brown-yellow_green.png": "/postelimodule/static/media/brown-yellow_green.6aeb43440b4d1bca8867.png",
+    "static/media/violet-gold.png": "/postelimodule/static/media/violet-gold.423cfe4c5de2abaeaa0b.png",
+    "static/media/resolution_blue-pink.png": "/postelimodule/static/media/resolution_blue-pink.914180712ceef917cebe.png",
+    "static/media/black-pink.png": "/postelimodule/static/media/black-pink.cf9bc48aae96440b9d60.png",
+    "static/media/violet-yellow_green.png": "/postelimodule/static/media/violet-yellow_green.19dcc28081ef921c92a7.png",
+    "static/media/pink-yellow_green.png": "/postelimodule/static/media/pink-yellow_green.c5b2d349d7467c34bcbd.png",
+    "static/media/boston_blue-pink.png": "/postelimodule/static/media/boston_blue-pink.49cdc67935629fda0b85.png",
+    "static/media/red-yellow_green.png": "/postelimodule/static/media/red-yellow_green.624d3b1f50828cc58dc5.png",
+    "static/media/brown-gold.png": "/postelimodule/static/media/brown-gold.26db02a6d3806a1bfd16.png",
+    "static/media/green-yellow_green.png": "/postelimodule/static/media/green-yellow_green.a6a3b49f91869e9b2d17.png",
+    "static/media/gold-night_rider.png": "/postelimodule/static/media/gold-night_rider.4ca45b5a2cb9fde05de2.png",
+    "static/media/red-gold.png": "/postelimodule/static/media/red-gold.c1bb1d47ea1f4cb5e8fa.png",
+    "static/media/boston_blue-gold.png": "/postelimodule/static/media/boston_blue-gold.fcc1bb2f7e081703d949.png",
+    "static/media/resolution_blue-yellow_green.png": "/postelimodule/static/media/resolution_blue-yellow_green.18799c8a4b3f01d57a0f.png",
+    "index.html": "/postelimodule/index.html",
+    "main.55eb33c9.css.map": "/postelimodule/static/css/main.55eb33c9.css.map",
+    "main.69cb182a.js.map": "/postelimodule/static/js/main.69cb182a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55eb33c9.css",
+    "static/js/main.69cb182a.js"
+  ]
+}
