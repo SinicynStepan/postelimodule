@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { BsX } from "react-icons/bs";
+// import { BsX } from "react-icons/bs";
 
 import Carousel from "./carousel/Carousel";
 import FinalButton from "./button/FinalButton";
@@ -72,8 +72,8 @@ const arrColor = [
 
 
 export default function MyComponent() {
-   const [modalDisplay, setModalDisplay] = useState('none');
-   const [modalText, setModalText] = useState('');
+   // const [modalDisplay, setModalDisplay] = useState('none');
+   // const [modalText, setModalText] = useState('');
 
 
    const [userMainColor, setUserMainColor] = useState('');
@@ -249,13 +249,13 @@ export default function MyComponent() {
             <FinalButton 
                userChoiseMain={userMainColor} 
                userChoiseAdd={userAddColor} 
-               modalDisplay={modalDisplay}
-               modalText={modalText}
-               setModalDisplay={setModalDisplay}
-               setModalText={setModalText}
+               // modalDisplay={modalDisplay}
+               // modalText={modalText}
+               // setModalDisplay={setModalDisplay}
+               // setModalText={setModalText}
             />
          </div>
-         <div className="modal-container" style={{display: modalDisplay}}>
+         {/* <div className="modal-container" style={{display: modalDisplay}}>
             <div className="modal">
                <div className="modal-text">
                   <p>{modalText}</p>
@@ -267,7 +267,7 @@ export default function MyComponent() {
                   <BsX className="modal_esc-icons" />
                </button>
             </div>
-         </div>
+         </div> */}
       </div>
    );
 }
