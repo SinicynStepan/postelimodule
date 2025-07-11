@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/postelimodule/static/css/main.b0eed47d.css",
-    "main.js": "/postelimodule/static/js/main.cef3f256.js",
+    "main.js": "/postelimodule/static/js/main.2405e23c.js",
     "static/media/red-pink.png": "/postelimodule/static/media/red-pink.5b097ff1a0cc8c078ec6.png",
     "static/media/iceberg-yellow_green.png": "/postelimodule/static/media/iceberg-yellow_green.eaa787a26ccc4df9e30b.png",
     "static/media/resolution_blue-gold.png": "/postelimodule/static/media/resolution_blue-gold.457f306637e1f0379f8c.png",
@@ -22,10 +22,10 @@
     "static/media/resolution_blue-yellow_green.png": "/postelimodule/static/media/resolution_blue-yellow_green.18799c8a4b3f01d57a0f.png",
     "index.html": "/postelimodule/index.html",
     "main.b0eed47d.css.map": "/postelimodule/static/css/main.b0eed47d.css.map",
-    "main.cef3f256.js.map": "/postelimodule/static/js/main.cef3f256.js.map"
+    "main.2405e23c.js.map": "/postelimodule/static/js/main.2405e23c.js.map"
   },
   "entrypoints": [
     "static/css/main.b0eed47d.css",
-    "static/js/main.cef3f256.js"
+    "static/js/main.2405e23c.js"
   ]
 }
