@@ -28,22 +28,20 @@ function useWindowSize() {
    return windowSize;
 }
 
-// type typeDevice = 'Laptop' | 'Tablet_L' | 'Tablet_S' | 'Phone_L' | 'Phone_S';
 
 export default function Carousel(
    {
       arrayImages,
       arrayImagesLenght
    }) {
-
-   let maxMoveWidth = 0;
-   // const [usersDevice, setUsersDevice] = useState();
-   const [usersDeviceImgWidth, setUsersDeviceImgWidth] = useState();
-
    const { user_width } = useWindowSize();
 
-         
-   const [transformTime, setTransformTime] = useState(1.2);
+
+   const [isUserDo, setIsUserDo] = useState(false);
+
+   const [usersDeviceImgWidth, setUsersDeviceImgWidth] = useState();
+
+   const [transformTime, setTransformTime] = useState(1);
    const [countMove, setCountMove] = useState(0);
    const [move, setMove] = useState(0);
 
@@ -51,80 +49,93 @@ export default function Carousel(
       if (countMove === arrayImagesLenght - 1) {
          setCountMove(0)
          setTransformTime(0);
+         setMove(0)
       }
       else {
-         setCountMove(countMove + 1)
-         setTransformTime(1.2);
+         setCountMove(countMove => countMove + 1)
+         setTransformTime(1);
+         setMove(move => move -= usersDeviceImgWidth)
       }
-
-      setMove(-1 * usersDeviceImgWidth * countMove)
-
-      console.log("move: " + move);
-       console.log('countMove: ' + countMove);
-      console.log('usersDeviceImgWidth: ' + usersDeviceImgWidth);
+      
+      setIsUserDo(true)
    }
 
    const prevImage = () => {
       if (countMove === 0) {
-         setCountMove(arrayImagesLenght - 1)
+         setCountMove(countMove => arrayImagesLenght - 1)
          setTransformTime(0);
-         setMove(-1 * usersDeviceImgWidth * countMove)
+         setMove(-1 * (arrayImagesLenght - 1) * usersDeviceImgWidth)
       }
       else {
-         setCountMove(countMove - 1)
-         setTransformTime(1.2);
-         setMove(-1 * usersDeviceImgWidth * countMove)
+         setCountMove(countMove => countMove - 1)
+         setTransformTime(1);
+         setMove(move => move += usersDeviceImgWidth)
       }
 
-      // setMove(-1 * usersDeviceImgWidth * countMove)
-
-
-      console.log("move: " + move);
-       console.log('countMove: ' + countMove);
-      console.log('usersDeviceImgWidth: ' + usersDeviceImgWidth);
-      
+      setIsUserDo(true)
    }
 
 
    useEffect(() => {
-      if (user_width > 1200) {
-         // setUsersDevice('Laptop')
+      if (user_width > 2600) {
+         setUsersDeviceImgWidth(1100)
+      }
+      else if (user_width > 1800 && user_width <= 2600) {
+         setUsersDeviceImgWidth(920)
+      }
+      else if (user_width > 1200 && user_width <= 1800) {
          setUsersDeviceImgWidth(622)
       }
       else if (user_width > 830 && user_width <= 1200) {
-         // setUsersDevice('Tablet_L')
          setUsersDeviceImgWidth(622)
       }
       else if (user_width > 550 && user_width <= 830) {
-         // setUsersDevice('Tablet_S')
          setUsersDeviceImgWidth(520)
       }
       else if (user_width > 400 && user_width <= 550) {
-         // setUsersDevice('Phone_L')
          setUsersDeviceImgWidth(380)
       }
       else {
-         // setUsersDevice('Phone_S')
          setUsersDeviceImgWidth(280)
       }
 
-      // maxMoveWidth = usersDeviceImgWidth * arrayImagesLenght;
-      // const intervalId = setInterval(() => {
-      //    nextImage();
-      // }, 4000); // 4000 миллисекунд = 4 секунд
+      const nextSlide = () => {
+         if (countMove === arrayImagesLenght - 1) {
+            setCountMove(0)
+            setTransformTime(0);
+            setMove(0)
+         }
+         else {
+            setCountMove(countMove => countMove + 1)
+            setTransformTime(1);
+            setMove(move => move -= usersDeviceImgWidth)
+         }
+      }
 
-      // return () => clearInterval(intervalId);
+      let stdInterval = 4000;
+      let longInterval = 10000;
 
+      if (isUserDo) {
+         const intervalId = setInterval(() => {
+            nextSlide()
+         }, longInterval); // 1000 миллисекунд = 1 секунд
+         return () => clearInterval(intervalId);
+      } else {
+         const intervalId = setInterval(() => {
+            nextSlide()
+         }, stdInterval); // 1000 миллисекунд = 1 секунд
+         return () => clearInterval(intervalId);
+      }
+      
 
-      // console.log('countMove: ' + countMove);
-      // console.log('usersDeviceImgWidth: ' + usersDeviceImgWidth);
-
-
-   }, [user_width, maxMoveWidth, usersDeviceImgWidth, arrayImagesLenght, countMove])
+   }, [user_width, isUserDo, 
+      countMove, arrayImagesLenght, move, usersDeviceImgWidth,
+      setCountMove, setTransformTime, setMove
+   ])
 
       
    const myTransformStyle = { 
-      transition: `transform ${transformTime}s ease`,
+      transition: `transform ${transformTime}s ease-in-out`,
       transform: `translateX(${move}px)`
    };
 
@@ -132,7 +143,7 @@ export default function Carousel(
    return (
       <div className='carousel'> 
          <button 
-            onClick={() => prevImage()}
+            onClick={prevImage}
             className='carousel-btn btn-prev'
          >
             <MdOutlineArrowBackIos className="carousel-arrow-icons" />

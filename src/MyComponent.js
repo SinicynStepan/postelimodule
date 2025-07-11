@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { BsX } from "react-icons/bs";
+
 import Carousel from "./carousel/Carousel";
 import FinalButton from "./button/FinalButton";
 
@@ -25,52 +27,55 @@ import violetGold from './images/violet-gold.png'
 import violetYellowGreen from './images/violet-yellow_green.png'
 
 const arrImages = [
-   {main_color: 'black', add_color: 'pink', file: blackPink, filePath: '../images/black-pink.png'},
-   {main_color: 'boston_blue', add_color: 'gold', file: bostonBlueGold, filePath: '../images/boston_blue-gold.png'},
-   {main_color: 'boston_blue', add_color: 'pink', file: bostonBluePink, filePath: '../images/boston_blue-pink.png'},
-   {main_color: 'brown', add_color: 'gold', file: brownGold, filePath: '../images/brown-gold.png'},
-   {main_color: 'brown', add_color: 'yellow_green', file: brownYellowGreen, filePath: '../images/brown-yellow_green.png'},
-   {main_color: 'gold', add_color: 'night_rider', file: goldNightRider, filePath: '../images/gold-night_rider.png'},
-   {main_color: 'green', add_color: 'pink', file: greenPink, filePath: '../images/green-pink.png'},
-   {main_color: 'green', add_color: 'yellow_green', file: greenYellowGreen, filePath: '../images/green-yellow_green.png'},
-   {main_color: 'iceberg', add_color: 'yellow_green', file: icebergYellowGreen, filePath: '../images/iceberg-yellow_green.png'},
-   {main_color: 'pink', add_color: 'yellow_green', file: pinkYellowGreen, filePath: '../images/pink-yellow_green.png'},
-   {main_color: 'red', add_color: 'gold', file: redGold, filePath: '../images/red-gold.png'},
-   {main_color: 'red', add_color: 'pink', file: redPink, filePath: '../images/red-pink.png'},
-   {main_color: 'red', add_color: 'yellow_green', file: redYellowGreen, filePath: '../images/red-yellow_green.png'},
-   {main_color: 'resolution_blue', add_color: 'gold', file: resolutionBlueGold, filePath: '../images/resolution_blue-gold.png'},
-   {main_color: 'resolution_blue', add_color: 'pink', file: resolutionBluePink, filePath: '../images/resolution_blue-pink.png'},
-   {main_color: 'resolution_blue', add_color: 'yellow_green', file: resolutionBlueYellowGreen, filePath: '../images/resolution_blue-yellow_green.png'},
-   {main_color: 'violet', add_color: 'gold', file: violetGold, filePath: '../images/violet-gold.png'},
-   {main_color: 'violet', add_color: 'yellow_green', file: violetYellowGreen, filePath: '../images/violet-yellow_green.png'}
+   {main_color: 'Черный', add_color: 'Розовый', file: blackPink, filePath: '../images/black-pink.png'},
+   {main_color: 'Голубой', add_color: 'Золото', file: bostonBlueGold, filePath: '../images/boston_blue-gold.png'},
+   {main_color: 'Голубой', add_color: 'Розовый', file: bostonBluePink, filePath: '../images/boston_blue-pink.png'},
+   {main_color: 'Шоколад', add_color: 'Золото', file: brownGold, filePath: '../images/brown-gold.png'},
+   {main_color: 'Шоколад', add_color: 'Серебро', file: brownYellowGreen, filePath: '../images/brown-yellow_green.png'},
+   {main_color: 'Золото', add_color: 'Черный', file: goldNightRider, filePath: '../images/gold-night_rider.png'},
+   {main_color: 'Изумруд', add_color: 'Розовый', file: greenPink, filePath: '../images/green-pink.png'},
+   {main_color: 'Изумруд', add_color: 'Серебро', file: greenYellowGreen, filePath: '../images/green-yellow_green.png'},
+   {main_color: 'Тиффани', add_color: 'Серебро', file: icebergYellowGreen, filePath: '../images/iceberg-yellow_green.png'},
+   {main_color: 'Розовый', add_color: 'Серебро', file: pinkYellowGreen, filePath: '../images/pink-yellow_green.png'},
+   {main_color: 'Винный', add_color: 'Золото', file: redGold, filePath: '../images/red-gold.png'},
+   {main_color: 'Винный', add_color: 'Розовый', file: redPink, filePath: '../images/red-pink.png'},
+   {main_color: 'Винный', add_color: 'Серебро', file: redYellowGreen, filePath: '../images/red-yellow_green.png'},
+   {main_color: 'Темно_синий', add_color: 'Золото', file: resolutionBlueGold, filePath: '../images/resolution_blue-gold.png'},
+   {main_color: 'Темно_синий', add_color: 'Розовый', file: resolutionBluePink, filePath: '../images/resolution_blue-pink.png'},
+   {main_color: 'Темно_синий', add_color: 'Серебро', file: resolutionBlueYellowGreen, filePath: '../images/resolution_blue-yellow_green.png'},
+   {main_color: 'Фиолетовый', add_color: 'Золото', file: violetGold, filePath: '../images/violet-gold.png'},
+   {main_color: 'Фиолетовый', add_color: 'Серебро', file: violetYellowGreen, filePath: '../images/violet-yellow_green.png'}
 ]
 
 const arrImageLenght = 18;
 
 const arrColor = [
-   {c_name: "gold", c_code: "#DECA90"},
-   {c_name: "yellow_green", c_code: "#C6C6BC"},
-   {c_name: "pink", c_code: "#E0C6C2"},
-   {c_name: "white", c_code: "#FFFFFF"},
-   {c_name: "iceberg", c_code: "#C6E4D8"},
-   {c_name: "violet", c_code: "#632C59"},
-   {c_name: "red", c_code: "#882029"},
-   {c_name: "brown", c_code: "#564035"},
-   {c_name: "night_rider", c_code: "#2F2F2F"},
-   {c_name: "green", c_code: "#2A6564"},
-   {c_name: "boston_blue", c_code: "#4485A5"},
-   {c_name: "resolution_blue", c_code: "#2E4173"},
-
-   {c_name: "boston_blue", c_code: "#4485A5"},
-   {c_name: "boston_blue", c_code: "#4485A5"},
-   {c_name: "boston_blue", c_code: "#4485A5"},
-   {c_name: "boston_blue", c_code: "#4485A5"},
-   {c_name: "boston_blue", c_code: "#4485A5"},
+   {c_name: "Шоколад", c_code: "#4f372d"},
+   {c_name: "Бежевый", c_code: "#d1b699"},
+   {c_name: "Тиффани", c_code: "#4484a7"},
+   {c_name: "Темно_синий", c_code: "#2b4371"},
+   {c_name: "Винный", c_code: "#88202b"},
+   {c_name: "Лаванда", c_code: "#9077b1"},
+   {c_name: "Персик", c_code: "#ebb088"},
+   {c_name: "Фисташка", c_code: "#8f9863"},
+   {c_name: "Золото", c_code: "#dec990"},
+   {c_name: "Серебро", c_code: "#cbcbcb"},
+   {c_name: "Хаки", c_code: "#44602d"},
+   {c_name: "Изумруд", c_code: "#2a6563"},
+   {c_name: "Розовый", c_code: "#d19aaf"},
+   {c_name: "Черный", c_code: "#111111"},
+   {c_name: "Фиолетовый", c_code: "#541f4b"},
+   {c_name: "Голубой", c_code: "#adcfce"},
+   {c_name: "Белый", c_code: "#ffffff"},
 ]
 
 
 
 export default function MyComponent() {
+   const [modalDisplay, setModalDisplay] = useState('none');
+   const [modalText, setModalText] = useState('');
+
+
    const [userMainColor, setUserMainColor] = useState('');
    const [userAddColor, setUserAddColor] = useState('');
 
@@ -96,20 +101,11 @@ export default function MyComponent() {
    function renderMainColor() {
       if (userMainColor === '')
          return   arrColor.map(elem => (
-                     <button 
-                        key={elem.c_name} 
-                        className='_btn _colors' 
-                        style={{backgroundColor: elem.c_code}}
-                        onClick={() => changeMainColor(elem.c_name)}
-                     ></button>
-                  ))
-      else
-         return   arrColor.map(elem => (
-            elem.c_name === userMainColor 
+            elem.c_name === "Черный"
             ?  <button 
                   key={elem.c_name} 
                   className='_btn _colors' 
-                  style={{backgroundColor: elem.c_code, border: '2px solid red'}}
+                  style={{backgroundColor: elem.c_code, border: '1px solid white' }}
                   onClick={() => changeMainColor(elem.c_name)}
                ></button>
             :  <button 
@@ -119,11 +115,34 @@ export default function MyComponent() {
                   onClick={() => changeMainColor(elem.c_name)}
                ></button>
          ))
+      else
+         return   arrColor.map(elem => (
+            elem.c_name === userMainColor 
+            ?  <button 
+                  key={elem.c_name} 
+                  className='_btn _colors' 
+                  style={{backgroundColor: elem.c_code, border: '2px solid red'}}
+                  onClick={() => changeMainColor(elem.c_name)}
+               ></button>
+            :  elem.c_name === "Черный" 
+               ?  <button 
+                     key={elem.c_name} 
+                     className='_btn _colors' 
+                     style={{backgroundColor: elem.c_code, border: '1px solid white' }}
+                     onClick={() => changeMainColor(elem.c_name)}
+                  ></button>
+               :  <button 
+                     key={elem.c_name} 
+                     className='_btn _colors' 
+                     style={{backgroundColor: elem.c_code}}
+                     onClick={() => changeMainColor(elem.c_name)}
+                  ></button>
+         ))
    }  
    function renderAddColor() {
       if (userAddColor === '')
          return   arrColor.map(elem => (
-            elem.c_name === "white"
+            elem.c_name === "Белый"
             ?  <button 
                   key={elem.c_name} 
                   className='_btn _colors' 
@@ -146,19 +165,19 @@ export default function MyComponent() {
                   style={{backgroundColor: elem.c_code, border: '2px solid red'}}
                   onClick={() => changeAddColor(elem.c_name)}
                ></button>
-            :  elem.c_name === "white" 
-            ?  <button 
-                  key={elem.c_name} 
-                  className='_btn _colors' 
-                  style={{backgroundColor: elem.c_code, border: '1px solid black' }}
-                  onClick={() => changeAddColor(elem.c_name)}
-               ></button>
-            :  <button 
-                  key={elem.c_name} 
-                  className='_btn _colors' 
-                  style={{backgroundColor: elem.c_code}}
-                  onClick={() => changeAddColor(elem.c_name)}
-               ></button>
+            :  elem.c_name === "Белый" 
+               ?  <button 
+                     key={elem.c_name} 
+                     className='_btn _colors' 
+                     style={{backgroundColor: elem.c_code, border: '1px solid black' }}
+                     onClick={() => changeAddColor(elem.c_name)}
+                  ></button>
+               :  <button 
+                     key={elem.c_name} 
+                     className='_btn _colors' 
+                     style={{backgroundColor: elem.c_code}}
+                     onClick={() => changeAddColor(elem.c_name)}
+                  ></button>
          ))
    }
 
@@ -179,6 +198,14 @@ export default function MyComponent() {
                index = i;
             }
          }
+         if (!isFound) {
+            for (let i = 0; i < arrImageLenght; i++) {
+               if (arrImages[i].add_color === userMainColor && arrImages[i].main_color === userAddColor) {
+                  isFound = true;
+                  index = i;
+               }
+            }
+         }
          if (isFound) {
             return   <div className="image-content">
                         <img 
@@ -188,15 +215,6 @@ export default function MyComponent() {
                      </div>
          }
          return   <div
-                     style={{
-                        // height: "100%",
-                        // display: 'flex', 
-                        // alignItems: "center",
-                        // justifyContent: 'center',
-                        // textAlign: 'center',
-                        // fontSize: '25px',
-                        // borderRadius: '10px'
-                     }}
                      className='c_n_white title bgc_red not_found_image_text'
                      >
                      К сожалению такого сочетания пока нет,<br/>
@@ -228,7 +246,27 @@ export default function MyComponent() {
          </div>
          <div className="container-finally">
             <h2 className="title _h1-2 c_n_black text_center">от 12.990 руб</h2>
-            <FinalButton />
+            <FinalButton 
+               userChoiseMain={userMainColor} 
+               userChoiseAdd={userAddColor} 
+               modalDisplay={modalDisplay}
+               modalText={modalText}
+               setModalDisplay={setModalDisplay}
+               setModalText={setModalText}
+            />
+         </div>
+         <div className="modal-container" style={{display: modalDisplay}}>
+            <div className="modal">
+               <div className="modal-text">
+                  <p>{modalText}</p>
+               </div>
+               <button
+                  className="modal_esc"
+                  onClick={() => setModalDisplay('none')}
+               >
+                  <BsX className="modal_esc-icons" />
+               </button>
+            </div>
          </div>
       </div>
    );
