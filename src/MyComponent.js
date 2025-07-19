@@ -144,6 +144,23 @@ import wineTiffany from './images/wine/wine_tiffany.jpg'
 import wineViolet from './images/wine/wine_violet.jpg'
 import wineBlue from './images/wine/wine_blue.jpg'
 import wineWhite from './images/wine/wine_white.jpg'
+import bezjBezj from './images/repeat/bezj_bezj.jpg'     // repeat
+import blackBlack from './images/repeat/black_black.jpg'
+import blueBlue from './images/repeat/blue_blue.jpg'
+import chocolateChocolate from './images/repeat/chocolate_chocolate.jpg'
+import darkBlueDarkBlue from './images/repeat/dark-blue_dark-blue.jpg'
+import fistahkaFistahka from './images/repeat/fistahka_fistahka.jpg'
+import goldGold from './images/repeat/gold_gold.jpg'
+import hakkiHakki from './images/repeat/hakki_hakki.jpg'
+import izumrudeIzumrude from './images/repeat/izumrude_izumrude.jpg'
+import lavandaLavanda from './images/repeat/lavanda_lavanda.jpg'
+import peachPeach from './images/repeat/peach_peach.jpg'
+import pinkPink from './images/repeat/pink_pink.jpg'
+import silverSilver from './images/repeat/silver_silver.jpg'
+import tiffanyTiffany from './images/repeat/tiffany_tiffany.jpg'
+import violetViolet from './images/repeat/violet_violet.jpg'
+import whiteWhite from './images/repeat/white_white.jpg'
+import wineWine from './images/repeat/wine_wine.jpg'
 
 
 
@@ -269,6 +286,24 @@ const arrImages = [
    {main_color: 'Розовый', add_color: 'Серебро', file: pinkSilver, filePath: './images/pink/pink_silver.jpg'},
    {main_color: 'Розовый', add_color: 'Тиффани', file: pinkTiffany, filePath: './images/pink/pink_tiffany.jpg'},
    {main_color: 'Розовый', add_color: 'Белый', file: pinkWhite, filePath: './images/pink/pink_white.jpg'},
+// repeat
+   {main_color: 'Бежевый', add_color: 'Бежевый', file: bezjBezj, filePath: './images/repeat/bezj_bezj.jpg'},
+   {main_color: 'Черный', add_color: 'Черный', file: blackBlack, filePath: './images/repeat/black_black.jpg'},
+   {main_color: 'Голубой', add_color: 'Голубой', file: blueBlue, filePath: './images/repeat/blue_blue.jpg'},
+   {main_color: 'Шоколад', add_color: 'Шоколад', file: chocolateChocolate, filePath: './images/repeat/chocolate_chocolate.jpg'},
+   {main_color: 'Темно_синий', add_color: 'Темно_синий', file: darkBlueDarkBlue, filePath: './images/repeat/dark-blue_dark-blue.jpg'},
+   {main_color: 'Фисташка', add_color: 'Фисташка', file: fistahkaFistahka, filePath: './images/repeat/fistahka_fistahka.jpg'},
+   {main_color: 'Золото', add_color: 'Золото', file: goldGold, filePath: './images/repeat/gold_gold.jpg'},
+   {main_color: 'Хакки', add_color: 'Хакки', file: hakkiHakki, filePath: './images/repeat/hakki_hakki.jpg'},
+   {main_color: 'Изумруд', add_color: 'Изумруд', file: izumrudeIzumrude, filePath: './images/repeat/izumrude_izumrude.jpg'},
+   {main_color: 'Лаванда', add_color: 'Лаванда', file: lavandaLavanda, filePath: './images/repeat/lavanda_lavanda.jpg'},
+   {main_color: 'Персик', add_color: 'Персик', file: peachPeach, filePath: './images/repeat/peach_peach.jpg'},           ///////////
+   {main_color: 'Розовый', add_color: 'Розовый', file: pinkPink, filePath: './images/repeat/pink_pink.jpg'},
+   {main_color: 'Серебро', add_color: 'Серебро', file: silverSilver, filePath: './images/repeat/silver_silver.jpg'},
+   {main_color: 'Тиффани', add_color: 'Тиффани', file: tiffanyTiffany, filePath: './images/repeat/tiffany_tiffany.jpg'},
+   {main_color: 'Фиолетовый', add_color: 'Фиолетовый', file: violetViolet, filePath: './images/repeat/violet_violet.jpg'},
+   {main_color: 'Белый', add_color: 'Белый', file: whiteWhite, filePath: './images/repeat/white_white.jpg'},
+   {main_color: 'Винный', add_color: 'Винный', file: wineWine, filePath: './images/repeat/wine_wine.jpg'},
 // silver
    {main_color: 'Серебро', add_color: 'Белый', file: silverWhite, filePath: './images/silver/silver_white.jpg'},
 // tiffany
@@ -302,7 +337,7 @@ const arrImages = [
    {main_color: 'Винный', add_color: 'Белый', file: wineWhite, filePath: './images/wine/wine_white.jpg'},
 ]
 
-const arrImageLenght = 136;
+const arrImageLenght = 153;
 
 const arrColor = [
    {c_name: "Шоколад", c_code: "#3d1505"},
@@ -327,10 +362,6 @@ const arrColor = [
 
 
 export default function MyComponent() {
-   // const [modalDisplay, setModalDisplay] = useState('none');
-   // const [modalText, setModalText] = useState('');
-
-
    const [userMainColor, setUserMainColor] = useState('');
    const [userAddColor, setUserAddColor] = useState('');
 
@@ -504,25 +535,8 @@ export default function MyComponent() {
             <FinalButton 
                userChoiseMain={userMainColor} 
                userChoiseAdd={userAddColor} 
-               // modalDisplay={modalDisplay}
-               // modalText={modalText}
-               // setModalDisplay={setModalDisplay}
-               // setModalText={setModalText}
             />
          </div>
-         {/* <div className="modal-container" style={{display: modalDisplay}}>
-            <div className="modal">
-               <div className="modal-text">
-                  <p>{modalText}</p>
-               </div>
-               <button
-                  className="modal_esc"
-                  onClick={() => setModalDisplay('none')}
-               >
-                  <BsX className="modal_esc-icons" />
-               </button>
-            </div>
-         </div> */}
       </div>
    );
 }

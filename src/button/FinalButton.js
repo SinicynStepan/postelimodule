@@ -1,5 +1,3 @@
-// import { useState } from "react";
-
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 import './FinalButton.css';
@@ -7,12 +5,8 @@ import './FinalButton.css';
 export default function FinalButton({
    userChoiseMain, 
    userChoiseAdd,
-
-   // setModalDisplay,
-   // setModalText
 }) {
    const phoneNumber = '79137310361'; // Номер телефона в международном формате (без +)
-   // const message = `Привет, я хочу узнать больше о постельном белье в цветах "${userChoiseMain}" и "${userChoiseAdd}"!`; // Текст сообщения
 
    const addText = () => {
       let add_text = '';
