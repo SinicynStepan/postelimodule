@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/postelimodule/static/css/main.22b2c149.css",
+    "main.css": "/postelimodule/static/css/main.01201e4a.css",
     "main.js": "/postelimodule/static/js/main.84a01d94.js",
     "static/media/silver_silver.jpg": "/postelimodule/static/media/silver_silver.05627986deae08aa24fe.jpg",
     "static/media/gold_blue.jpg": "/postelimodule/static/media/gold_blue.f5ff92406face06da604.jpg",
@@ -156,11 +156,11 @@
     "static/media/black_wine.jpg": "/postelimodule/static/media/black_wine.5128f7b80825ee8f7bce.jpg",
     "static/media/black_dark-blue.jpg": "/postelimodule/static/media/black_dark-blue.510e03f1cb9f994c3b9f.jpg",
     "index.html": "/postelimodule/index.html",
-    "main.22b2c149.css.map": "/postelimodule/static/css/main.22b2c149.css.map",
+    "main.01201e4a.css.map": "/postelimodule/static/css/main.01201e4a.css.map",
     "main.84a01d94.js.map": "/postelimodule/static/js/main.84a01d94.js.map"
   },
   "entrypoints": [
-    "static/css/main.22b2c149.css",
+    "static/css/main.01201e4a.css",
     "static/js/main.84a01d94.js"
   ]
 }
