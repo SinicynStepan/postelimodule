@@ -1,7 +1,25 @@
 {
   "files": {
     "main.css": "/postelimodule/static/css/main.01201e4a.css",
-    "main.js": "/postelimodule/static/js/main.84a01d94.js",
+    "main.js": "/postelimodule/static/js/main.5f0a98cb.js",
+    "static/media/chocolate_mokko.jpg": "/postelimodule/static/media/chocolate_mokko.99135cab4b18ec78f612.jpg",
+    "static/media/dark-blue_mokko.jpg": "/postelimodule/static/media/dark-blue_mokko.616a08f96ee494c08b43.jpg",
+    "static/media/mokko_peach.jpg": "/postelimodule/static/media/mokko_peach.b44e25fc50b1ddd95a3b.jpg",
+    "static/media/mokko_pink.jpg": "/postelimodule/static/media/mokko_pink.bf4d2c92e76c4a7d36fa.jpg",
+    "static/media/mokko_blue.jpg": "/postelimodule/static/media/mokko_blue.41334593fdb1382a3222.jpg",
+    "static/media/mokko_gold.jpg": "/postelimodule/static/media/mokko_gold.7fe9b7857b5822b5c6d5.jpg",
+    "static/media/mokko_bezj.jpg": "/postelimodule/static/media/mokko_bezj.723c85ab3e341846212b.jpg",
+    "static/media/mokko_lavanda.jpg": "/postelimodule/static/media/mokko_lavanda.edc6261e5470e9412a91.jpg",
+    "static/media/mokko_silver.jpg": "/postelimodule/static/media/mokko_silver.6b14466db7594c009a44.jpg",
+    "static/media/mokko_fistahka.jpg": "/postelimodule/static/media/mokko_fistahka.5182ba3a34238d69b822.jpg",
+    "static/media/mokko_tiffany.jpg": "/postelimodule/static/media/mokko_tiffany.eecaf9b0d0cd9081c447.jpg",
+    "static/media/mokko_white.jpg": "/postelimodule/static/media/mokko_white.4103e7e23299232655f8.jpg",
+    "static/media/violet_mokko.jpg": "/postelimodule/static/media/violet_mokko.07870a6b30fb30ac85ce.jpg",
+    "static/media/mokko_izumrude.jpg": "/postelimodule/static/media/mokko_izumrude.e30272fb38e258800a88.jpg",
+    "static/media/hakki_mokko.jpg": "/postelimodule/static/media/hakki_mokko.60094aed5d2801d12f95.jpg",
+    "static/media/mokko_wine.jpg": "/postelimodule/static/media/mokko_wine.e8d12cd04939c28865fc.jpg",
+    "static/media/black_mokko.jpg": "/postelimodule/static/media/black_mokko.64e2ef7a61d908572c91.jpg",
+    "static/media/mokko_mokko.jpg": "/postelimodule/static/media/mokko_mokko.8a3c3204e995535be90d.jpg",
     "static/media/silver_silver.jpg": "/postelimodule/static/media/silver_silver.05627986deae08aa24fe.jpg",
     "static/media/gold_blue.jpg": "/postelimodule/static/media/gold_blue.f5ff92406face06da604.jpg",
     "static/media/izumrude_izumrude.jpg": "/postelimodule/static/media/izumrude_izumrude.a44b2b011e8c14a979f1.jpg",
@@ -157,10 +175,10 @@
     "static/media/black_dark-blue.jpg": "/postelimodule/static/media/black_dark-blue.510e03f1cb9f994c3b9f.jpg",
     "index.html": "/postelimodule/index.html",
     "main.01201e4a.css.map": "/postelimodule/static/css/main.01201e4a.css.map",
-    "main.84a01d94.js.map": "/postelimodule/static/js/main.84a01d94.js.map"
+    "main.5f0a98cb.js.map": "/postelimodule/static/js/main.5f0a98cb.js.map"
   },
   "entrypoints": [
     "static/css/main.01201e4a.css",
-    "static/js/main.84a01d94.js"
+    "static/js/main.5f0a98cb.js"
   ]
 }
