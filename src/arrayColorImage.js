@@ -18,6 +18,7 @@ import blackTiffany from './images/black/black_tiffany.jpg'
 import blackViolet from './images/black/black_violet.jpg'
 import blackWhite from './images/black/black_white.jpg'
 import blackWine from './images/black/black_wine.jpg'
+import blackMokko from './images/black/black_mokko.jpg'
 
 import blueBezj from './images/blue/blue_bezj.jpg'
 import blueFistahka from './images/blue/blue_fistahka.jpg'
@@ -42,6 +43,7 @@ import chocolateViolet from './images/chocolate/chocolate_violet.jpg'
 import chocolateWine from './images/chocolate/chocolate_wine.jpg'
 import chocolateBlue from './images/chocolate/chocolate-blue.jpg'
 import chocolateWhite from './images/chocolate/chocolate-white.jpg'
+import chocolateMokko from './images/chocolate/chocolate_mokko.jpg'
 
 import darkBlueBezj from './images/dark-blue/dark-blue_bezj.jpg'
 import darkBlueFistahka from './images/dark-blue/dark-blue_fistahka.jpg'
@@ -57,6 +59,7 @@ import darkBlueViolet from './images/dark-blue/dark-blue_violet.jpg'
 import darkBlueWine from './images/dark-blue/dark-blue_wine.jpg'
 import darkBlueBlue from './images/dark-blue/dark-blue_blue.jpg'
 import darkBlueWhite from './images/dark-blue/dark-blue_white.jpg'
+import darkBlueMokko from './images/dark-blue/dark-blue_mokko.jpg'
 
 import fistahkaBezj from './images/fistahka/fistahka_bezj.jpg'
 import fistahkaSilver from './images/fistahka/fistahka_silver.jpg'
@@ -85,6 +88,7 @@ import hakkiViolet from './images/hakki/hakki_violet.jpg'
 import hakkiBlue from './images/hakki/hakki_blue.jpg'
 import hakkiWhite from './images/hakki/hakki_white.jpg'
 import hakkiWine from './images/hakki/hakki_wine.jpg'
+import hakkiMokko from './images/hakki/hakki_mokko.jpg'
 
 import izumrudeBezj from './images/izumrude/izumrude_bezj.jpg'
 import izumrudeFistahka from './images/izumrude/izumrude_fistahka.jpg'
@@ -137,6 +141,7 @@ import violetSilver from './images/violet/violet_silver.jpg'
 import violetTiffany from './images/violet/violet_tiffany.jpg'
 import violetBlue from './images/violet/violet_blue.jpg'
 import violetWhite from './images/violet/violet_white.jpg'
+import violetMokko from './images/violet/violet_mokko.jpg'
 
 import wineBezj from './images/wine/wine_bezj.jpg'
 import wineFistahka from './images/wine/wine_fistahka.jpg'
@@ -168,6 +173,20 @@ import tiffanyTiffany from './images/repeat/tiffany_tiffany.jpg'
 import violetViolet from './images/repeat/violet_violet.jpg'
 import whiteWhite from './images/repeat/white_white.jpg'
 import wineWine from './images/repeat/wine_wine.jpg'
+import mokkoMokko from './images/repeat/mokko_mokko.jpg'
+
+import mokkoBezj from './images/mokko/mokko_bezj.jpg'
+import mokkoBlue from './images/mokko/mokko_blue.jpg'
+import mokkoFistahka from './images/mokko/mokko_fistahka.jpg'
+import mokkoGold from './images/mokko/mokko_gold.jpg'
+import mokkoIzumrude from './images/mokko/mokko_izumrude.jpg'
+import mokkoLavanda from './images/mokko/mokko_lavanda.jpg'
+import mokkoPeach from './images/mokko/mokko_peach.jpg'
+import mokkoPink from './images/mokko/mokko_pink.jpg'
+import mokkoSilver from './images/mokko/mokko_silver.jpg'
+import mokkoTiffany from './images/mokko/mokko_tiffany.jpg'
+import mokkoWhite from './images/mokko/mokko_white.jpg'
+import mokkoWine from './images/mokko/mokko_wine.jpg'
 
 
 
@@ -191,6 +210,7 @@ export const arrImages = [  // массив всех изображений с �
    {main_color: 'Черный', add_color: 'Фиолетовый', file: blackViolet, filePath: './images/black/black_violet.jpg'},
    {main_color: 'Черный', add_color: 'Белый', file: blackWhite, filePath: './images/black/black_white.jpg'},
    {main_color: 'Черный', add_color: 'Винный', file: blackWine, filePath: './images/black/black_wine.jpg'},
+   {main_color: 'Черный', add_color: 'Мокко', file: blackMokko, filePath: './images/black/black_mokko.jpg'},
 
    {main_color: 'Голубой', add_color: 'Бежевый', file: blueBezj, filePath: './images/blue/blue_bezj.jpg'},
    {main_color: 'Голубой', add_color: 'Фисташка', file: blueFistahka, filePath: './images/blue/blue_fistahka.jpg'},
@@ -215,6 +235,7 @@ export const arrImages = [  // массив всех изображений с �
    {main_color: 'Шоколад', add_color: 'Винный', file: chocolateWine, filePath: './images/chocolate/chocolate_wine.jpg'},
    {main_color: 'Шоколад', add_color: 'Голубой', file: chocolateBlue, filePath: './images/chocolate/chocolate-blue.jpg'},
    {main_color: 'Шоколад', add_color: 'Белый', file: chocolateWhite, filePath: './images/chocolate/chocolate-white.jpg'},
+   {main_color: 'Шоколад', add_color: 'Мокко', file: chocolateMokko, filePath: './images/chocolate/chocolate_mokko.jpg'},
 
    {main_color: 'Темно_синий', add_color: 'Бежевый', file: darkBlueBezj, filePath: './images/dark-blue/dark-blue_bezj.jpg'},
    {main_color: 'Темно_синий', add_color: 'Фисташка', file: darkBlueFistahka, filePath: './images/dark-blue/dark-blue_fistahka.jpg'},
@@ -230,6 +251,7 @@ export const arrImages = [  // массив всех изображений с �
    {main_color: 'Темно_синий', add_color: 'Винный', file: darkBlueWine, filePath: './images/dark-blue/dark-blue_wine.jpg'},
    {main_color: 'Темно_синий', add_color: 'Голубой', file: darkBlueBlue, filePath: './images/dark-blue/dark-blue_blue.jpg'},
    {main_color: 'Темно_синий', add_color: 'Белый', file: darkBlueWhite, filePath: './images/dark-blue/dark-blue_white.jpg'},
+   {main_color: 'Темно_синий', add_color: 'Мокко', file: darkBlueMokko, filePath: './images/dark-blue/dark-blue_mokko.jpg'},
 
    {main_color: 'Фисташка', add_color: 'Бежевый', file: fistahkaBezj, filePath: './images/fistahka/fistahka_bezj.jpg'},
    {main_color: 'Фисташка', add_color: 'Серебро', file: fistahkaSilver, filePath: './images/fistahka/fistahka_silver.jpg'},
@@ -258,6 +280,7 @@ export const arrImages = [  // массив всех изображений с �
    {main_color: 'Хакки', add_color: 'Голубой', file: hakkiBlue, filePath: './images/hakki/hakki_blue.jpg'},
    {main_color: 'Хакки', add_color: 'Белый', file: hakkiWhite, filePath: './images/hakki/hakki_white.jpg'},
    {main_color: 'Хакки', add_color: 'Винный', file: hakkiWine, filePath: './images/hakki/hakki_wine.jpg'},
+   {main_color: 'Хакки', add_color: 'Мокко', file: hakkiMokko, filePath: './images/hakki/hakki_mokko.jpg'},
 
    {main_color: 'Изумруд', add_color: 'Бежевый', file: izumrudeBezj, filePath: './images/izumrude/izumrude_bezj.jpg'},
    {main_color: 'Изумруд', add_color: 'Фисташка', file: izumrudeFistahka, filePath: './images/izumrude/izumrude_fistahka.jpg'},
@@ -310,6 +333,20 @@ export const arrImages = [  // массив всех изображений с �
    {main_color: 'Фиолетовый', add_color: 'Фиолетовый', file: violetViolet, filePath: './images/repeat/violet_violet.jpg'},
    {main_color: 'Белый', add_color: 'Белый', file: whiteWhite, filePath: './images/repeat/white_white.jpg'},
    {main_color: 'Винный', add_color: 'Винный', file: wineWine, filePath: './images/repeat/wine_wine.jpg'},
+   {main_color: 'Мокко', add_color: 'Мокко', file: mokkoMokko, filePath: './images/repeat/mokko_mokko.jpg'},
+
+   {main_color: 'Мокко', add_color: 'Бежевый', file: mokkoBezj, filePath: './images/mokko/mokko_bezj.jpg'},
+   {main_color: 'Мокко', add_color: 'Голубой', file: mokkoBlue, filePath: './images/mokko/mokko_blue.jpg'},
+   {main_color: 'Мокко', add_color: 'Фисташка', file: mokkoFistahka, filePath: './images/mokko/mokko_fistahka.jpg'},
+   {main_color: 'Мокко', add_color: 'Золото', file: mokkoGold, filePath: './images/repeat/mokko_gold.jpg'},
+   {main_color: 'Мокко', add_color: 'Изумруд', file: mokkoIzumrude, filePath: './images/mokko/mokko_izumrude.jpg'},
+   {main_color: 'Мокко', add_color: 'Лаванда', file: mokkoLavanda, filePath: './images/mokko/mokko_lavanda.jpg'},
+   {main_color: 'Мокко', add_color: 'Персик', file: mokkoPeach, filePath: './images/mokko/mokko_peach.jpg'},
+   {main_color: 'Мокко', add_color: 'Розовый', file: mokkoPink, filePath: './images/mokko/mokko_pink.jpg'},
+   {main_color: 'Мокко', add_color: 'Серебро', file: mokkoSilver, filePath: './images/mokko/mokko_silver.jpg'},
+   {main_color: 'Мокко', add_color: 'Тиффани', file: mokkoTiffany, filePath: './images/mokko/mokko_tiffany.jpg'},
+   {main_color: 'Мокко', add_color: 'Белый', file: mokkoWhite, filePath: './images/mokko/mokko_white.jpg'},
+   {main_color: 'Мокко', add_color: 'Винный', file: mokkoWine, filePath: './images/mokko/mokko_wine.jpg'},
 
    {main_color: 'Серебро', add_color: 'Белый', file: silverWhite, filePath: './images/silver/silver_white.jpg'},
 
@@ -328,6 +365,7 @@ export const arrImages = [  // массив всех изображений с �
    {main_color: 'Фиолетовый', add_color: 'Тиффани', file: violetTiffany, filePath: './images/violet/violet_tiffany.jpg'},
    {main_color: 'Фиолетовый', add_color: 'Голубой', file: violetBlue, filePath: './images/violet/violet_blue.jpg'},
    {main_color: 'Фиолетовый', add_color: 'Белый', file: violetWhite, filePath: './images/violet/violet_white.jpg'},
+   {main_color: 'Фиолетовый', add_color: 'Мокко', file: violetMokko, filePath: './images/violet/violet_mokko.jpg'},
 
    {main_color: 'Винный', add_color: 'Бежевый', file: wineBezj, filePath: './images/wine/wine_bezj.jpg'},
    {main_color: 'Винный', add_color: 'Фисташка', file: wineFistahka, filePath: './images/wine/wine_fistahka.jpg'},
@@ -343,4 +381,4 @@ export const arrImages = [  // массив всех изображений с �
    {main_color: 'Винный', add_color: 'Белый', file: wineWhite, filePath: './images/wine/wine_white.jpg'},
 ]
 
-export const arrImageLenght = 153;  // размер массива arrImages
+export const arrImageLenght = 171;  // размер массива arrImages
