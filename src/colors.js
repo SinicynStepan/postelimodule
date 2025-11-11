@@ -1,6 +1,6 @@
 const arrColor = [
    {c_name: "Шоколад", c_code: "#3d1505"},
-   {c_name: "Мокко", c_code: "#341e00"},
+   {c_name: "Мокко", c_code: "#a47764"},
    {c_name: "Бежевый", c_code: "#bc9d7c"},
    {c_name: "Тиффани", c_code: "#839e9c"},
    {c_name: "Темно_синий", c_code: "#182f4a"},
