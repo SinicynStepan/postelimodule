@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/postelimodule/static/css/main.01201e4a.css",
-    "main.js": "/postelimodule/static/js/main.a50cb9fb.js",
+    "main.css": "/postelimodule/static/css/main.7a96fb41.css",
+    "main.js": "/postelimodule/static/js/main.9561cf7d.js",
     "static/media/chocolate_mokko.jpg": "/postelimodule/static/media/chocolate_mokko.d1bfe95ef4dd99acd8ac.jpg",
     "static/media/mokko_blue.jpg": "/postelimodule/static/media/mokko_blue.a5128151c3072534aedd.jpg",
     "static/media/mokko_peach.jpg": "/postelimodule/static/media/mokko_peach.8506ea217299fe0e93e9.jpg",
@@ -20,6 +20,25 @@
     "static/media/mokko_izumrude.jpg": "/postelimodule/static/media/mokko_izumrude.6cc1b49cf0e196640529.jpg",
     "static/media/black_mokko.jpg": "/postelimodule/static/media/black_mokko.96f4207b281748e40c7a.jpg",
     "static/media/mokko_wine.jpg": "/postelimodule/static/media/mokko_wine.b3403a8f638a05a33c25.jpg",
+    "static/media/metal_lavanda.jpg": "/postelimodule/static/media/metal_lavanda.db4826201ddfef9473f0.jpg",
+    "static/media/metal_peach.jpg": "/postelimodule/static/media/metal_peach.995bef835c34f7f6d6b5.jpg",
+    "static/media/metal_gold.jpg": "/postelimodule/static/media/metal_gold.24266d9214fd648a5179.jpg",
+    "static/media/metal_bezj.jpg": "/postelimodule/static/media/metal_bezj.0903b6770c7de5ca6b9a.jpg",
+    "static/media/metal_blue.jpg": "/postelimodule/static/media/metal_blue.78ec752d597f92d9c7ca.jpg",
+    "static/media/metal_white.jpg": "/postelimodule/static/media/metal_white.0bf944ddcedb7ddfbc9e.jpg",
+    "static/media/metal_silver.jpg": "/postelimodule/static/media/metal_silver.f1e047b30e99b0d2af2e.jpg",
+    "static/media/metal_pink.jpg": "/postelimodule/static/media/metal_pink.e8e03f69b81a5eeb5ecc.jpg",
+    "static/media/metal_tiffany.jpg": "/postelimodule/static/media/metal_tiffany.af2a9eb204b441cde3e8.jpg",
+    "static/media/metal_metal.jpg": "/postelimodule/static/media/metal_metal.d6ac610dd61ec6f9048c.jpg",
+    "static/media/metal_fistahka.jpg": "/postelimodule/static/media/metal_fistahka.bf28791122cf92ed7d7c.jpg",
+    "static/media/metal_dark-blue.jpg": "/postelimodule/static/media/metal_dark-blue.cc2ff83ed00a6a59f0ad.jpg",
+    "static/media/metal_izumrud.jpg": "/postelimodule/static/media/metal_izumrud.dd9d28bb3d563373e3cf.jpg",
+    "static/media/metal_chocolate.jpg": "/postelimodule/static/media/metal_chocolate.911e3ee76672547ae7f3.jpg",
+    "static/media/metal_wine.jpg": "/postelimodule/static/media/metal_wine.a82a26ada5876dc57bf2.jpg",
+    "static/media/metal_violet.jpg": "/postelimodule/static/media/metal_violet.aa2f78c698cf0f92eaa0.jpg",
+    "static/media/metal_hakki.jpg": "/postelimodule/static/media/metal_hakki.51c74c327513ccd1d10a.jpg",
+    "static/media/metal_black.jpg": "/postelimodule/static/media/metal_black.4da4f843280fe5977f93.jpg",
+    "static/media/metal_mokko.jpg": "/postelimodule/static/media/metal_mokko.38faed600c6302183f64.jpg",
     "static/media/silver_silver.jpg": "/postelimodule/static/media/silver_silver.05627986deae08aa24fe.jpg",
     "static/media/gold_blue.jpg": "/postelimodule/static/media/gold_blue.f5ff92406face06da604.jpg",
     "static/media/izumrude_izumrude.jpg": "/postelimodule/static/media/izumrude_izumrude.a44b2b011e8c14a979f1.jpg",
@@ -174,11 +193,11 @@
     "static/media/black_wine.jpg": "/postelimodule/static/media/black_wine.5128f7b80825ee8f7bce.jpg",
     "static/media/black_dark-blue.jpg": "/postelimodule/static/media/black_dark-blue.510e03f1cb9f994c3b9f.jpg",
     "index.html": "/postelimodule/index.html",
-    "main.01201e4a.css.map": "/postelimodule/static/css/main.01201e4a.css.map",
-    "main.a50cb9fb.js.map": "/postelimodule/static/js/main.a50cb9fb.js.map"
+    "main.7a96fb41.css.map": "/postelimodule/static/css/main.7a96fb41.css.map",
+    "main.9561cf7d.js.map": "/postelimodule/static/js/main.9561cf7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.01201e4a.css",
-    "static/js/main.a50cb9fb.js"
+    "static/css/main.7a96fb41.css",
+    "static/js/main.9561cf7d.js"
   ]
 }
