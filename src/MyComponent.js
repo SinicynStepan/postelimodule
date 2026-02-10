@@ -11,7 +11,6 @@ import { arrImages, arrImageLenght } from "./arrayColorImage";    // импор�
 import arrColor from "./colors";    // импорт массива цветов
 
 
-
 export default function MyComponent() {
    const [userMainColor, setUserMainColor] = useState('');  // основный цвет, выбранный пользователем
    const [userAddColor, setUserAddColor] = useState('');    // дополнительный цвет, выбранный пользователем

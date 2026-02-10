@@ -27,13 +27,13 @@ export default function FinalButton({
    }
 
 
-   const phoneNumber = '79137310361'; // Номер телефона в международном формате (без +)
+   const username = 'stepsinnik'; // Номер телефона в международном формате (без +)
    const message = Text(); // получаем сообщение из функции Text
    const encodedMessage = encodeURIComponent(message);   // кодируем сообщение
-   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`; // ссылка на whatsapp с вставкой нужного сообщения
+   const tgUrl = `https://t.me/${username}?text=${encodedMessage}`; // ссылка на whatsapp с вставкой нужного сообщения
 
    const handleClick = () => {   // функция для открытия whatsapp по ссылке
-      window.open(whatsappUrl, '_blank');
+      window.open(tgUrl, '_blank');
    };
 
 
